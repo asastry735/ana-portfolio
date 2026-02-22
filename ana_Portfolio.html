@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Ana — Data & Econometrics Analyst</title>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet"/>
+
+<script>
+/* ====================================================================
+   👋 HI ANA! THIS IS THE ONLY SECTION YOU EVER NEED TO EDIT.
+   ====================================================================
+
+   HOW TO EDIT THIS FILE:
+   ─ Open the file in any text editor (Notepad on Windows, TextEdit on Mac)
+   ─ Find what you want to change below
+   ─ Change the text between the quote marks  "like this"
+   ─ Save the file, then open it in your browser to see changes
+   ─ NEVER delete commas, brackets [ ] or curly braces { }
+
+   STUCK? Just send me the file and tell me what to change!
+   ==================================================================== */
+
+const MY_INFO = {
+
+  /* ── Your name ─────────────────────────────────────────────── */
+  name: "Ana",
+
+  /* ── One-line role ──────────────────────────────────────────── */
+  role: "Data & Econometrics Analyst",
+
+  /* ── Location ───────────────────────────────────────────────── */
+  location: "Melbourne, Australia",
+
+  /* ── Short bio ──────────────────────────────────────────────── */
+  bio: "I turn complex economic data into clear, actionable insights that drive strategic decisions — specialising in time-series forecasting, financial modelling, and policy analysis across finance, healthcare, and social research.",
+
+  /* ── Social / contact links ─────────────────────────────────────
+     Leave as "" if you don't have that one                       */
+  linkedin: "https://www.linkedin.com/in/ana-sastry-43445918b/",
+  github:   "",
+  email:    "anasastry3@gmail.com",
+  website:  "",
+
+  /* ── Skill chips ─────────────────────────────────────────────── */
+  skills: [
+    "R", "Python", "SQL", "MATLAB", "EViews",
+    "Power BI", "Tableau", "Excel",
+    "Time Series", "Panel Data", "Causal Inference",
+    "Forecasting", "Econometrics", "Data Visualisation"
+  ],
+
+  /* ====================================================================
+     YOUR PROJECTS
+     ====================================================================
+
+     HOW TO EDIT A PROJECT:
+     ─ Find the project you want to change
+     ─ Update the text between the quote marks
+
+     HOW TO ADD A NEW PROJECT:
+     ─ Scroll to the bottom of the projects list
+     ─ You'll see a template with "NEW PROJECT TEMPLATE" comment
+     ─ Remove the  /*  and  * /  around it to activate it
+     ─ Fill in your details
+
+     HOW TO ADD A PROJECT IMAGE:
+     ─ Option A (your own chart): Export from R / Python / Tableau as PNG,
+       upload to imgur.com, copy the image link, paste below
+     ─ Option B (stock photo): Go to unsplash.com, find image, right-click
+       → Copy Image Address, paste below
+
+     RESULT TIPS — always use specific numbers:
+     ✅  "Achieved 78% accuracy predicting volatility spikes"
+     ❌  "Good accuracy in predictions"
+
+     BADGE options you can use:
+       "Finance"  "Healthcare"  "Policy"  "Forecasting"
+       "Commodities"  "Labour"  "Research"  "ASX"
+
+     TOOLS — just list what you used, e.g. ["R", "Python", "Excel"]
+     ==================================================================== */
+
+  projects: [
+
+        /* ── PROJECT 1 ─────────────────────────────────── */
+    {
+      title:       "Melbourne Cost of Living Crisis Dashboard (Power BI) — In Progress",
+      category:    "Policy · Dashboarding",
+      badge:       "Policy",
+      image:       "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=700&h=420&fit=crop",
+      description: "Building a portfolio-grade Power BI dashboard quantifying housing stress, healthcare access barriers, transport burden, geographic hotspots, and policy levers for Melbourne.",
+      result:      "In progress: executive KPI page + suburb-level hotspot mapping + policy solutions page.",
+      tools:       ["Power BI", "DAX", "Data Visualisation"],
+      link:        ""
+    }
+    ,
+
+    /* ── PROJECT 2 ─────────────────────────────────── */
+    {
+      title:       "Household Debt & Financial Stress Dynamics (HILDA)",
+      category:    "Applied Microeconometrics · Policy Analysis",
+      badge:       "Policy",
+      image:       "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=700&h=420&fit=crop",
+      description: "Replicated and extended La Cava & Simon (2005) using HILDA panel data to analyse household debt accumulation, financial stress, and economic vulnerability across Australian households.",
+      result:      "Identified ~2,553 financially stressed households; income, employment stability, and homeownership significantly reduced financial constraint probability.",
+      tools:       ["R", "HILDA", "Logit Models", "Panel Analysis"],
+      link:        "https://drive.google.com/file/d/1DqJ79d_nFJVQcIuRx7wKsXW0vCdIz8SA/view?usp=sharing"
+    },
+
+    /* ── PROJECT 3 ─────────────────────────────────── */
+    {
+      title:       "Private Health Insurance & Dental Visits (Recursive Bivariate Probit)",
+      category:    "Healthcare · Causal Inference",
+      badge:       "Healthcare",
+      image:       "https://images.unsplash.com/photo-1586773860418-d37222d8fce3?w=700&h=420&fit=crop",
+      description: "Estimated a recursive bivariate probit model to test whether private health insurance with ancillary cover causally increases dental visits, addressing selection into insurance.",
+      result:      "Estimated treatment effect was positive but statistically insignificant (~+14pp).",
+      tools:       ["Econometrics", "Bivariate Probit", "Policy Analysis"],
+      link:        "https://drive.google.com/file/d/1LbYSDEQdAw6xaKsRAllh-7I19HZ0gOOW/view?usp=sharing"
+    },
+
+    /* ── PROJECT 4 ─────────────────────────────────── */
+    {
+      title:       "Labour Force Participation in Australia (Panel Logit)",
+      category:    "Labour · Panel Data",
+      badge:       "Labour",
+      image:       "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=700&h=420&fit=crop",
+      description: "Compared pooled, random-effects, and fixed-effects logit models using HILDA to study how demographics, education, household structure, and health shocks predict labour force participation.",
+      result:      "Panel evidence supports FE logit as the preferred specification when unobserved heterogeneity matters.",
+      tools:       ["Panel Data", "Logit", "HILDA"],
+      link:        "https://drive.google.com/file/d/1xfV9ygDOXI8m4RKWSopSlDcrEkWLjljd/view?usp=sharing"
+    },
+
+    /* ── PROJECT 5 ─────────────────────────────────── */
+    {
+      title:       "Forecasting NSW Specialised Food Retail Turnover (STL + Drift)",
+      category:    "Forecasting · Time Series",
+      badge:       "Forecasting",
+      image:       "https://images.unsplash.com/photo-1556740749-887f6717d7e4?w=700&h=420&fit=crop",
+      description: "Built and evaluated benchmark forecasts (mean/naive/snaive/drift) and improved models using STL decomposition with robust settings, trained on 1982–2021 and tested on the last two years.",
+      result:      "STL + drift produced the best test performance (lowest error vs benchmarks).",
+      tools:       ["R", "Time Series", "Forecasting"],
+      link:        "https://drive.google.com/file/d/1n8heJWbboVXtUtIQ25Gy2DFrED8bz-F1/view?usp=sharing"
+    },
+
+    /* ── PROJECT 6 ─────────────────────────────────── */
+    {
+      title:       "Drivers of Charitable Donations (Heckman Selection + Tobit)",
+      category:    "Social Impact · Selection Models",
+      badge:       "Research",
+      image:       "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?w=700&h=420&fit=crop",
+      description: "Modelled a two-stage donation decision (donate vs amount) using Heckman selection (2-step + MLE) and Tobit to quantify how income, education, and volunteering relate to giving.",
+      result:      "In the MLE selection model: +1% income → ~8.6% higher donation amount (conditional on donating).",
+      tools:       ["Econometrics", "Heckman", "Tobit"],
+      link:        "https://drive.google.com/file/d/1AifHYhJ8PpW63oQfEZxI5aulimrD74Pv/view?usp=sharing"
+    },
+
+    /* ── PROJECT 7 ─────────────────────────────────── */
+    {
+      title:       "S&P500 Returns & VIX Volatility Modelling",
+      category:    "Financial Econometrics · Time Series",
+      badge:       "Finance",
+      image:       "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=700&h=420&fit=crop",
+      description: "Modelled the relationship between S&P500 returns and VIX volatility using logit and ordered-response models with lagged volatility dynamics to study market predictability.",
+      result:      "Best specification achieved ~84% directional prediction accuracy; increases in VIX strongly associated with negative market returns.",
+      tools:       ["R", "Time Series", "Logit Models", "Financial Econometrics"],
+      link:        "https://drive.google.com/file/d/1r-JVe5hV_G9oROS84rEwNTxj6RSgyTUk/view?usp=sharing"
+    }
+,
+    /* ── PROJECT 8 ─────────────────────────────────── */
+    {
+      title:       "Stock Return Structure (PCA + Factor Analysis)",
+      category:    "Finance · Dimensionality Reduction",
+      badge:       "Finance",
+      image:       "https://images.unsplash.com/photo-1559526324-593bc073d938?w=700&h=420&fit=crop",
+      description: "Analysed multi-asset return dynamics using outlier diagnostics, PCA (variance explained + biplots), and factor analysis (Varimax/Promax) to uncover latent drivers of co-movement.",
+      result:      "Top principal components captured a large share of common variation (PC1–PC3 ~39.5%).",
+      tools:       ["R", "PCA", "Factor Analysis"],
+      link:        "https://drive.google.com/file/d/1zLOMBo3cngLGCx1IIPeQffZSAOFrQFtf/view?usp=sharing"
+    }
+]};
+
+/* ====================================================================
+   STOP HERE — everything below is the design engine. Don't touch it!
+   ==================================================================== */
+</script>
+
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --white:     #F7F7F2;
+    --off:       #E4E6C3;
+    --border:    #c8cba8;
+    --muted:     #5a6b52;
+    --body-col:  #121113;
+    --accent:    #899878;
+    --accent-dk: #6b7a5e;
+    --dark:      #222725;
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'DM Sans', system-ui, sans-serif;
+    background: var(--white);
+    color: var(--body-col);
+    font-size: 15px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  a { color: inherit; text-decoration: none; }
+  img { display: block; max-width: 100%; }
+
+  .nav {
+    position: sticky; top: 0; z-index: 200;
+    background: var(--dark);
+    border-bottom: 1px solid #333a31;
+    height: 54px;
+    display: flex; align-items: center;
+    padding: 0 2.5rem;
+    justify-content: space-between;
+  }
+  .nav-brand { font-family:'Lora',serif; font-weight:700; font-size:1.1rem; color:#F7F7F2; }
+  .nav-links { display:flex; gap:1.75rem; font-size:.875rem; font-weight:500; color:rgba(247,247,242,0.55); }
+  .nav-links a { transition:color .2s; }
+  .nav-links a:hover { color:#E4E6C3; }
+  .nav-cta {
+    font-size:.8rem; font-weight:600;
+    padding:.45rem 1.25rem;
+    background:var(--accent); color:var(--dark);
+    border-radius:6px; transition:background .2s;
+  }
+  .nav-cta:hover { background:var(--accent-dk); }
+
+  .profile {
+    max-width:700px; margin:0 auto;
+    padding:4rem 1.5rem 2.5rem;
+    text-align:center;
+  }
+  .profile-name { font-family:'Lora',serif; font-size:2.1rem; font-weight:700; letter-spacing:-.025em; margin-bottom:.3rem; }
+  .profile-role { font-size:.95rem; color:var(--muted); margin-bottom:.25rem; }
+  .profile-loc  { font-size:.85rem; color:var(--muted); margin-bottom:1.1rem; }
+  .socials { display:flex; justify-content:center; gap:.75rem; margin-bottom:1.6rem; }
+  .socials a {
+    width:34px; height:34px; border-radius:50%;
+    border:1.5px solid var(--border);
+    display:flex; align-items:center; justify-content:center;
+    color:var(--muted); font-size:.7rem; font-weight:700;
+    transition:all .2s;
+  }
+  .socials a:hover { border-color:var(--accent); color:var(--accent); background:#E4E6C3; transform:translateY(-2px); }
+  .profile-bio { font-size:.975rem; color:var(--muted); line-height:1.75; max-width:560px; margin:0 auto 2rem; }
+  .chips { display:flex; flex-wrap:wrap; justify-content:center; gap:.5rem; }
+  .chip {
+    padding:.35rem 1rem;
+    background:var(--off); color:var(--dark);
+    border-radius:999px; font-size:.8rem; font-weight:600;
+    transition:all .2s; cursor:default; border:1px solid var(--border);
+  }
+  .chip:hover { background:var(--dark); color:#E4E6C3; transform:translateY(-1px); }
+
+  .divider { height:1px; background:var(--border); max-width:860px; margin:2.5rem auto; }
+
+  .section { max-width:900px; margin:0 auto; padding:0 1.5rem 5rem; }
+  .section-heading { font-family:'Lora',serif; font-size:1.4rem; font-weight:700; margin-bottom:2rem; color:var(--body-col); }
+
+  .projects-grid { display:grid; grid-template-columns:1fr 1fr; gap:3rem 2.5rem; }
+
+  .pcard { display:flex; flex-direction:column; transition:transform .25s; cursor:pointer; }
+  .pcard:hover { transform:translateY(-4px); }
+
+  .pcard-img {
+    width:100%; aspect-ratio:16/9; object-fit:cover;
+    border-radius:8px; margin-bottom:1.1rem;
+    border:1px solid var(--border);
+    background:var(--off);
+    transition:box-shadow .25s;
+  }
+  .pcard:hover .pcard-img { box-shadow:0 8px 32px rgba(34,39,37,.2); }
+
+  .pcard-cat { font-size:.72rem; font-weight:700; color:var(--accent); text-transform:uppercase; letter-spacing:.07em; margin-bottom:.4rem; }
+  .pcard-title { font-family:'Lora',serif; font-size:1.1rem; font-weight:700; color:var(--body-col); margin-bottom:.5rem; line-height:1.35; }
+
+  .pcard-links { display:flex; gap:.5rem; margin-bottom:.75rem; }
+  .pcard-links a {
+    padding: .65rem 1.5rem;
+    border-radius: 6px;
+    border: 2px solid var(--dark);
+    background: var(--dark);
+    color: #E4E6C3;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    font-size: .8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    transition: all .3s ease;
+  }
+  .pcard-links a:hover {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: var(--dark);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(137, 152, 120, .3);
+  }
+  .pcard-links a::after {
+    content: '→';
+    font-size: 1rem;
+    transition: transform .3s;
+  }
+  .pcard-links a:hover::after {
+    transform: translateX(3px);
+  }
+
+  .pcard-desc { font-size:.88rem; color:var(--muted); line-height:1.7; margin-bottom:.9rem; }
+
+  .pcard-result {
+    background:#dde3c4;
+    border-left:3px solid var(--accent);
+    padding:.75rem 1rem;
+    border-radius:0 6px 6px 0;
+    margin-bottom:1rem;
+  }
+  .result-lbl { font-size:.62rem; font-weight:700; color:#4a5e3a; text-transform:uppercase; letter-spacing:.08em; margin-bottom:.2rem; }
+  .result-txt { font-size:.875rem; font-weight:600; color:var(--body-col); line-height:1.4; }
+
+  .pcard-tags { display:flex; flex-wrap:wrap; gap:.4rem; }
+  .ptag { padding:.3rem .8rem; background:var(--off); color:var(--dark); border:1px solid var(--border); border-radius:6px; font-size:.78rem; font-weight:500; }
+
+  .data-widget { background:var(--off); border:1px solid var(--border); border-radius:10px; padding:2rem; margin-bottom:3rem; }
+  .data-widget > h3 { font-size:.8rem; font-weight:700; margin-bottom:1.25rem; color:var(--muted); text-transform:uppercase; letter-spacing:.05em; }
+  .dtabs { display:flex; flex-wrap:wrap; gap:.5rem; margin-bottom:1.25rem; }
+  .dtab {
+    padding:.4rem 1rem; border-radius:999px;
+    border:1.5px solid var(--border);
+    font-size:.8rem; font-weight:600; color:var(--muted);
+    background:var(--white); cursor:pointer; transition:all .2s;
+  }
+  .dtab:hover { border-color:var(--accent); color:var(--accent); }
+  .dtab.active { background:var(--dark); color:#E4E6C3; border-color:var(--dark); }
+  .dpanel { background:var(--white); border:1px solid var(--border); border-radius:8px; padding:1.25rem 1.5rem; }
+  .dpanel h4 { font-size:.95rem; font-weight:600; margin-bottom:.4rem; color:var(--body-col); }
+  .dpanel p  { font-size:.875rem; color:var(--muted); margin-bottom:.9rem; line-height:1.65; }
+  .dchips { display:flex; flex-wrap:wrap; gap:.4rem; }
+  .dchip { padding:.3rem .85rem; background:var(--off); color:var(--dark); border-radius:999px; font-size:.78rem; font-weight:600; border:1px solid var(--border); }
+
+  .skills-grid { display:grid; grid-template-columns:1fr 1fr 1fr; gap:1.5rem; }
+  .sbox { background:var(--off); border:1px solid var(--border); border-radius:8px; padding:1.25rem 1.5rem; }
+  .sbox h4 { font-size:.75rem; font-weight:700; text-transform:uppercase; letter-spacing:.07em; color:var(--muted); margin-bottom:.9rem; }
+  .stags { display:flex; flex-wrap:wrap; gap:.4rem; }
+  .stag { padding:.3rem .85rem; background:var(--white); border:1px solid var(--border); color:var(--body-col); border-radius:6px; font-size:.8rem; font-weight:500; transition:all .2s; cursor:default; }
+  .stag:hover { background:var(--dark); color:#E4E6C3; border-color:var(--dark); }
+
+  .footer { background:var(--dark); border-top:1px solid #2f3730; padding:3rem 1.5rem; text-align:center; }
+  .footer-name { font-family:'Lora',serif; font-size:1.3rem; font-weight:700; margin-bottom:.4rem; color:#F7F7F2; }
+  .footer-role { font-size:.9rem; color:rgba(228,230,195,.6); margin-bottom:1.5rem; }
+  .footer-links { display:flex; justify-content:center; gap:1.5rem; margin-bottom:1.5rem; }
+  .footer-links a { font-size:.85rem; color:rgba(228,230,195,.6); transition:color .2s; }
+  .footer-links a:hover { color:#E4E6C3; }
+  .footer-copy { font-size:.8rem; color:rgba(228,230,195,.25); }
+
+  @media(max-width:680px){
+    .projects-grid { grid-template-columns:1fr; }
+    .skills-grid   { grid-template-columns:1fr; }
+    .nav-links     { display:none; }
+    .profile-name  { font-size:1.75rem; }
+  }
+  .pcard-links { margin-top: 10px; }
+
+</style>
+</head>
+<body>
+<div id="app"></div>
+
+<script>
+const el = (tag, cls, ...kids) => {
+  const node = document.createElement(tag);
+  if (cls) node.className = cls;
+  for (const k of kids.flat()) {
+    if (k == null || k === false) continue;
+    node.append(typeof k === 'string' ? document.createTextNode(k) : k);
+  }
+  return node;
+};
+const a = (href, cls, txt, target) => {
+  const node = el('a', cls, txt);
+  node.href = href;
+  if (target) node.target = target;
+  return node;
+};
+
+const DATA_PANELS = {
+  'Time Series':     { desc:'Modelling trends, seasonality, and volatility over time — financial markets, retail sales, macroeconomic indicators.', chips:['Stock Prices','VIX Volatility','Sales Forecasting','GDP Growth','ARIMA · VAR · GARCH'] },
+  'Panel Data':      { desc:'Tracking multiple entities across time to identify patterns in household behaviour, firm performance, and policy impact.', chips:['Household Surveys','Firm-Level Data','Multi-State Studies','Fixed / Random Effects'] },
+  'Cross-Sectional': { desc:'Snapshot analysis of populations to understand relationships between variables at a specific point in time.', chips:['Census Data','Survey Research','Market Studies','Demographic Analysis'] },
+  'Financial':       { desc:'Processing asset prices, volatility indices, and market indicators to assess risk and predict movements.', chips:['S&P 500','Oil Prices','Equity Returns','Volatility Modelling'] },
+  'Healthcare':      { desc:'Analysing patient outcomes, insurance effects, and healthcare utilisation patterns to inform evidence-based policy.', chips:['Patient Visits','Insurance Coverage','Health Outcomes','Treatment Analysis'] },
+  'Labour':          { desc:'Studying workforce participation, wage dynamics, and demographic trends to guide economic policy and workforce strategy.', chips:['Employment Rates','Wage Analysis','Participation Trends','Demographic Shifts'] },
+};
+
+const SKILLS = {
+  'Software & Tools': ['R','Python','SQL','MATLAB','EViews','Power BI','Tableau','Excel','Stata','Notion'],
+  'Econometric Methods': ['Time Series (ARIMA/VAR/GARCH)','Panel Data (FE/RE)','Causal Inference','Difference-in-Differences','IV Regression','Forecasting','Propensity Matching','Cross-Sectional OLS'],
+  'Languages': ['English (Native)','Hindi (Fluent)','Telugu (Fluent)'],
+};
+
+function buildNav() {
+  const nav = el('nav','nav');
+  const brand = el('span','nav-brand', MY_INFO.name);
+  const links = el('div','nav-links',
+    a('#projects','','Projects'),
+    a('#expertise','','Data Expertise'),
+    a('#skills','','Skills'),
+  );
+  const cta = a(`mailto:${MY_INFO.email}`,'nav-cta','Contact');
+  nav.append(brand, links, cta);
+  return nav;
+}
+
+function buildProfile() {
+  const wrap = el('div','profile');
+
+  const soc = el('div','socials');
+  if (MY_INFO.linkedin) soc.append(a(MY_INFO.linkedin,'','in','_blank'));
+  if (MY_INFO.github)   soc.append(a(MY_INFO.github,  '','gh','_blank'));
+  if (MY_INFO.email)    soc.append(a(`mailto:${MY_INFO.email}`,'','✉'));
+  if (MY_INFO.website)  soc.append(a(MY_INFO.website, '','↗','_blank'));
+
+  const chips = el('div','chips', ...MY_INFO.skills.map(s=>{
+    const c=el('span','chip',s); return c;
+  }));
+
+  wrap.append(
+    el('h1','profile-name', MY_INFO.name),
+    el('p','profile-role', MY_INFO.role),
+    el('p','profile-loc', '📍 ' + MY_INFO.location),
+    soc,
+    el('p','profile-bio', MY_INFO.bio),
+    chips
+  );
+  return wrap;
+}
+
+function buildCard(p) {
+  const card = el('div','pcard');
+
+  const imgEl = document.createElement('img');
+  imgEl.className = 'pcard-img'; imgEl.src = p.image; imgEl.alt = p.title;
+
+  const links = el('div','pcard-links');
+  if (p.link) {
+    const btn = a(p.link, '', 'View Report', '_blank');
+    links.append(btn);
+  }
+
+const result = el('div','pcard-result',
+    el('div','result-lbl','Key Result'),
+    el('div','result-txt', p.result)
+  );
+
+  const tags = el('div','pcard-tags', ...p.tools.map(t=>el('span','ptag',t)));
+
+  card.append(
+    imgEl,
+    el('p','pcard-cat', p.category),
+    el('h3','pcard-title', p.title),
+    p.link ? links : null,
+    el('p','pcard-desc', p.description),
+    result,
+    tags
+  );
+  return card;
+}
+
+function buildProjects() {
+  const section = el('section','section');
+  section.id = 'projects';
+  const grid = el('div','projects-grid');
+  MY_INFO.projects.forEach(p => grid.append(buildCard(p)));
+  section.append(el('h2','section-heading','Projects'), grid);
+  return section;
+}
+
+function buildDataWidget() {
+  const section = el('section','section');
+  section.id = 'expertise';
+
+  const widget = el('div','data-widget');
+  const tabRow  = el('div','dtabs');
+  const panel   = el('div','dpanel');
+
+  const keys = Object.keys(DATA_PANELS);
+  let active = keys[0];
+
+  function updatePanel() {
+    const d = DATA_PANELS[active];
+    panel.innerHTML = '';
+    panel.append(
+      el('h4',null, active + ' Data'),
+      el('p', null, d.desc),
+      el('div','dchips', ...d.chips.map(c=>el('span','dchip',c)))
+    );
+  }
+
+  keys.forEach(k => {
+    const btn = el('button', k===active?'dtab active':'dtab', k);
+    btn.onclick = () => {
+      active = k;
+      tabRow.querySelectorAll('.dtab').forEach((b,i) => b.className = keys[i]===k?'dtab active':'dtab');
+      updatePanel();
+    };
+    tabRow.append(btn);
+  });
+
+  updatePanel();
+  widget.append(tabRow, panel);
+  section.append(
+    el('h2','section-heading','Data I Work With'),
+    widget
+  );
+  return section;
+}
+
+function buildSkills() {
+  const section = el('section','section');
+  section.id = 'skills';
+
+  const grid = el('div','skills-grid');
+  for (const [title, items] of Object.entries(SKILLS)) {
+    const box  = el('div','sbox');
+    const stags= el('div','stags', ...items.map(i=>el('span','stag',i)));
+    box.append(el('h4',null,title), stags);
+    grid.append(box);
+  }
+
+  section.append(el('h2','section-heading','Skills & Tools'), grid);
+  return section;
+}
+
+function buildFooter() {
+  const f = el('footer','footer');
+  const links = el('div','footer-links');
+  if (MY_INFO.linkedin) links.append(a(MY_INFO.linkedin,'','LinkedIn','_blank'));
+  if (MY_INFO.github)   links.append(a(MY_INFO.github,  '','GitHub',  '_blank'));
+  if (MY_INFO.email)    links.append(a(`mailto:${MY_INFO.email}`,'','Email'));
+
+  f.append(
+    el('div','footer-name', MY_INFO.name),
+    el('p','footer-role', MY_INFO.role),
+    links,
+    el('p','footer-copy', `© ${new Date().getFullYear()} ${MY_INFO.name}`)
+  );
+  return f;
+}
+
+function render() {
+  const app = document.getElementById('app');
+  app.append(
+    buildNav(),
+    buildProfile(),
+    el('div','divider'),
+    buildProjects(),
+    el('div','divider'),
+    buildDataWidget(),
+    el('div','divider'),
+    buildSkills(),
+    buildFooter()
+  );
+}
+
+render();
+</script>
+</body>
+</html>
